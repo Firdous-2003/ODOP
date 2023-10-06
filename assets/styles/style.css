@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --headerBackgroundColor: #FFFFFF;
+    --btnHoverColor: #2270E2;
+    --fontColor: #797979;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header {
+    position: fixed;
+    width: calc(100dvw - 30px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black; */
+    padding: 10px 20px;
+    background: var(--headerBackgroundColor);
+    /* position: relative; */
+    /* overflow: hidden; */
+    overflow-x: hidden;
+}
+
+
+.logo {
+    /* border: 2px solid black; */
+    padding: 10px 20px;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.navbar .navbar-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid black; */
+    width: 25%;
+    /* padding: 10px; */
+}
+
+.navbar-list li {
+    list-style: none;
+    padding: 10px;
+    color: #797979;
+    font-size: 18px;
+    font-weight: 600;
+    /* border: 1px solid black; */
+}
+
+.header-right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid black; */
+    /* padding: 10px 30px; */
+    width: 20%;
+}
+
+.header-content {
+    width: 100%;
+    height: 800px;
+    /* top: 5rem;
+    left: 0; */
+    background: url('https://10web-site.ai/43/wp-content/uploads/sites/46/2023/09/recycled-shoe-store-hero-image-bg_0mFxInjv.webp') no-repeat center center/cover;
+    /* border: 2px solid black; */
+    padding: 13rem 8rem 0 8rem;
+    /* margin: 5rem 0; */
+}
+
+.header-content h1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    /* width: 45%; */
+}
+
+.header-content h1 span {
+    font-size: 4.5rem;
+    line-height: 1;
+    color: white;
+    font-weight: 1000;
+}
+
+.header-content p {
+    color: white;
+    font-size: 17px;
+    width: 45%;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 15px 25px;
+    font-size: 15px;
+    margin-right: 2rem;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--btnHoverColor);
+    cursor: pointer;
+}
+
+/*Logos Section*/
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 2px solid black; */
+    padding: 1rem 4rem;
+    margin: 2rem 0 4rem 0;
+}
+
+.logo-images {
+    width: 170px;
+}
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+}
+
+.about-us img {
+    margin-right: 2rem;
+}
+
+.about-us-content {
+    width: 40%;
+    /* border: 2px solid black; */
+    padding: 20px 30px;
+}
+
+.about-us-content h3 {
+    font-size: 18px;
+    color: var(--btnHoverColor);
+    /* padding: 5px; */
+    margin-bottom: 15px;
+}
+
+.about-us-content h1 {
+    font-size: 2.5rem;
+    /* padding: 5px; */
+    margin-bottom: 15px;
+}
+
+.about-us-content p {
+    /* padding: 10px; */
+    margin-bottom: 15px;
+}
+
+.about-us-content a {
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.about-us-content a:hover {
+    color: var(--btnHoverColor);
+}
+
+/*Discover us section*/
+
+.discover-section .heading {
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.discover-section .heading h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.discover-section .heading p {
+    color: var(--fontColor);
+}
+
+.discover-section-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.discover-section-content-card {
+    width: 40%;
+    border: none;
+    border-bottom: 1px solid var(--fontColor);
+    padding: 1rem;
+    padding-bottom: 3rem;
+    margin: 1rem 2rem;
+}
+
+.discover-section-content-card span {
+    color: var(--btnHoverColor);
+    margin-bottom: 10px;
+}
+
+.discover-section-content-card h1 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.discover-section-content-card p {
+    color: var(--fontColor);
+    margin-bottom: 10px;
+}
+
+/*Best Seller Section*/
+
+.bestseller-section {
+    /* border: 2px solid black; */
+    margin: 4rem 0;
+}
+
+.bestseller-section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bestseller-section h1 {
+    /* border: 2px solid black; */
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 1rem 6rem;
+}
+
+.bestseller-section h1 a {
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+.bestseller-section h1 a::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+
+.bestseller-section .items {
+    width: 27%;
+    /* border: 2px solid black; */
+    cursor: pointer;
+}
+
+.bestseller-section-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+
+.items {
+    margin: 1rem;
+    width: 27%;
+    text-align: center;
+}
+
+.bestseller-section .items .item-images {
+    width: 365px;
+    margin-bottom: 1rem;
+}
+
+.item-names {
+    /* border: 2px solid black; */
+    text-align: center;
+}
+
+.item-names h2 {
+    color: var(--fontColor);
+    margin-top: 5px;
+}
+
+/*Textile Home Decor*/
+
+.textile-homeDecor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+/* .image:hover {} */
+
+.textile {
+    background: url('https://10web-site.ai/43/wp-content/uploads/sites/46/2023/09/recycled-shoe-store-shop-men-image-thumbnail_0mFxInjv.webp') no-repeat center center/cover;
+
+}
+
+.homedecor {
+    background: url('https://10web-site.ai/43/wp-content/uploads/sites/46/2023/09/recycled-shoe-store-shop-women-image-tumbnail_0mFxInjv.webp') no-repeat center center/cover;
+}
+
+.image-text {
+    text-align: center;
+    /* border: 2px solid black; */
+}
+
+.image-text h1 {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 300;
+}
+
+.image-text .btn {
+    margin: 10px auto;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 15px 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.image-text .btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.odop-provide {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.odop-provide p {
+    color: var(--fontColor);
+    width: 50%;
+}
+
+.odop-provide img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+/*Customers*/
+
+.customers {
+    margin: 4rem 0;
+}
+
+.customers h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.customers h2 {
+    text-align: center;
+    color: var(--fontColor);
+    margin: 2rem;
+    font-weight: 300;
+}
+
+.customer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.customer .customer-review {
+    width: 25%;
+    margin: 2rem;
+}
+
+.customer .customer-review p {
+    color: var(--fontColor);
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.customer .customer-review h3 {
+    color: green;
+}
+
+/**/
+
+.cultural-heritage {
+    /* width: 100%; */
+
+    /* height: 300px; */
+    background: url('https://10web-site.ai/43/wp-content/uploads/sites/46/2023/09/recycled-shoe-store-cta-image-bg_0mFxInjv.webp');
+    /* background-color: red; */
+    text-align: center;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.cultural-heritage div h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cultural-heritage div p {
+    padding: 20px;
+    margin: 0 3rem 2rem 0;
+}
+
+.payment {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 4rem;
+    border: none;
+    text-align: center;
+}
+
+#payment-method-2 {
+    border-left: 1px solid var(--fontColor);
+    border-right: 1px solid var(--fontColor);
+}
+
+.payment-methods img {
+    margin-right: 1rem;
+    /* background-color: green; */
+    /* mix-blend-mode:exclusion; */
+}
+
+/*Overview*/
+.overview {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 3rem 0;
+}
+
+.overview-content {
+    width: 20%;
+    /* border: 2px solid #000000; */
+    margin-right: 1rem;
+}
+
+.overview-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.overview-content p {
+    color: var(--fontColor);
+    width: 70%;
+}
+
+.overview-content ul li {
+    list-style: none;
+    color: var(--fontColor);
+    padding: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.overview-content ul li:hover {
+    color: black;
+    cursor: pointer;
+}
